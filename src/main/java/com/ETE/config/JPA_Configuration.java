@@ -1,5 +1,6 @@
 package com.ETE.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -25,10 +26,11 @@ public class JPA_Configuration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://zqhcqmuavseqna:e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8@ec2-54-166-167-192.compute-1.amazonaws.com:5432/d40q80o3cq6vre");
-        dataSource.setUsername("zqhcqmuavseqna");
-        dataSource.setPassword("e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/blogapi");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("asdasdasd");
         return  dataSource;
     }
 }
+
 

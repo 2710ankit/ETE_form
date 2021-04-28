@@ -9,7 +9,7 @@ function fun(){
         return;
     }
     var xhr1 = new XMLHttpRequest();
-        xhr1.open("POST", "https://chitkaraetebackend.herokuapp.com/mainpage", true);
+        xhr1.open("POST", "http://localhost:8080/mainpage", true);
         xhr1.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 if(this.responseText == 'false') {

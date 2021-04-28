@@ -1,7 +1,7 @@
 function getfun(){
     console.log("**********");
     var xhr= new XMLHttpRequest();
-    xhr.open("GET","https://chitkaraetebackend.herokuapp.com/mainpage",true);
+    xhr.open("GET","http://localhost:8080/mainpage",true);
     xhr.onreadystatechange=function (){
         if(this.readyState==4 && this.status==200){
             var data=JSON.parse(xhr.responseText);
@@ -81,7 +81,7 @@ function del(delBtn){
     p.parentNode.removeChild(p);
 
     var xhr=new XMLHttpRequest()
-    xhr.open("DELETE","http://chitkaraetebackend.herokuapp.com/mainpage",true);
+    xhr.open("DELETE","http://localhost:8080/mainpage",true);
     xhr.onreadystatechange = function (){
         if(this.readyState==4 && this.status==400) {
             console.log("delete method");
@@ -105,7 +105,7 @@ function searchFun(){
         Parent.removeChild(Parent.lastChild);
     }
     var xhr= new XMLHttpRequest();
-    xhr.open("POST","https://chitkaraetebackend.herokuapp.com/mainpage/search");
+    xhr.open("POST","http://localhost:8080/mainpage/search");
     xhr.onreadystatechange = function (){
         if(this.readyState == 4 && this.status==200){
             var data= JSON.parse(this.responseText);
