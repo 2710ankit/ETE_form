@@ -25,7 +25,7 @@ public class Controller {
 
     @RequestMapping(value = "/mainpage")
     public List getinfo(){
-        System.out.println("get request");
+        System.out.println("get request on main page");
         return userService.getallinfo();
     }
 

@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+<html>
+<head >
+    <link rel="stylesheet" href="../style/index.css">
 </head>
-<body>
+<body onload="getfun()">
+
+<div>
+    <input id="search" placeholder="Enter the name here" style="margin-left: 20px;width: 250px;">
+    <button id="searchBtn" onclick="searchFun()" style="float: right;margin-right: 20px;height: 25px;">Search</button>
+</div>
+
 <table id="table">
     <tr>
         <th>
@@ -29,6 +34,6 @@
 
 </table>
 
-<script src="../js/index.js"></script>
+<script src="../js/infoPage.js"></script>
 </body>
 </html>

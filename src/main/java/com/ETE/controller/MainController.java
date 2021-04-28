@@ -17,10 +17,13 @@ public class MainController {
 
 
     @RequestMapping(value = "/")
-    public String getinfo(){
+    public String indexPage(){
         System.out.println("get request");
-//        return userService.getallinfo();
-
         return  "index";
+    }
+
+    @RequestMapping(value = "/infopage")
+    public String getInfo(){
+        return "/html/infoPage";
     }
 }
