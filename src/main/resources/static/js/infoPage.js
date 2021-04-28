@@ -27,29 +27,46 @@ function viewdata( name, age, email, address, mobile){
     var table=document.getElementById('table');
 
     var row= document.createElement('tr');
-    var data1= document.createElement('td');
-    var data2= document.createElement('td');
-    var data3= document.createElement('td');
-    var data4= document.createElement('td');
-    var data5= document.createElement('td');
-    var data6= document.createElement('td');
-    var div=document.createElement('div');
+    var data1= document.createElement('p');
+    var data2= document.createElement('p');
+    var data3= document.createElement('p');
+    var data4= document.createElement('p');
+    var data5= document.createElement('p');
 
-    div.setAttribute("id","blockDiv");
     row.setAttribute('class','tableRow');
-    div.innerHTML=email;
-    data1.innerHTML=name;
-    data2.innerHTML=age;
-    data4.innerHTML=mobile;
-    data5.innerHTML=address;
-    data3.appendChild(div);
-    data6.innerHTML="<button onclick=del(this) class='delBtn' >Delete</button>";
 
-    row.appendChild(data1);
-    row.appendChild(data2);
-    row.appendChild(data3);
-    row.appendChild(data4);
-    row.appendChild(data5);
+    data1.innerHTML=name;
+    data1.setAttribute('class', 'tableName') ;
+    data2.innerHTML=age;
+    data2.setAttribute('class', 'tableAge');
+    data4.innerHTML=mobile;
+    data4.setAttribute('class', 'tableMobile');
+    data5.innerHTML=address;
+    data5.setAttribute('class', 'tableAddress');
+    data3.innerHTML=email;
+    data3.setAttribute('class', 'tableEmail');
+
+
+    var tableName= document.createElement('td');
+    var tableAge= document.createElement('td');
+    var tableMobile= document.createElement('td');
+    var tableAddress= document.createElement('td');
+    var tableEmail= document.createElement('td');
+    var data6= document.createElement('td');
+
+    data6.innerHTML="<button onclick=del(this) class='delBtn' >Delete</button> <button onclick=editfun(this) class='editBtn' >Edit</button>";
+
+    tableName.appendChild(data1);
+    tableAge.appendChild(data2);
+    tableMobile.appendChild(data4);
+    tableAddress.appendChild(data5);
+    tableEmail.appendChild(data3);
+
+    row.appendChild(tableName);
+    row.appendChild(tableAge);
+    row.appendChild(tableEmail);
+    row.appendChild(tableAddress);
+    row.appendChild(tableMobile);
     row.appendChild(data6);
 
     table.appendChild(row);

@@ -7,7 +7,7 @@ body{
     background-color: #e2d8ba;
 
     position: relative;
-    top:20%;
+    top: 15%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -19,7 +19,19 @@ body{
     margin-top: 10px;
 
 }
+#table{
+    width: 100%;
+    min-height: 30px;
+    background-color: #e2d8ba;
 
+    position: relative;
+    top: 15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
 
 #mainTable span{
     margin-left: 20px;
@@ -30,14 +42,7 @@ body{
     margin-left: 30px;
     margin-top: 10px;
 }
-#blockDiv{
-    white-space: nowrap; 
-  width: 50px; 
-  overflow: hidden;
-}
-#blockDiv:hover{
-    overflow-x: scroll;
-}
+
 #table td{
   padding-left: 20px;
     padding-top: 10px;
@@ -59,6 +64,32 @@ button{
     border: none;
     border-radius: 5px;
 }
+.editBtn {
+    height:18px;
+    background-color: #7f82e2;
+    border: none;
+    border-radius: 5px;
+}
 .tableRow{
     margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+
+}
+.tableName{
+    word-wrap: break-word;
+    width: 200px;
+}
+.tableAge{
+    width: 35px;
+}
+.tableEmail{
+    word-wrap: break-word;
+    width: 300px;
+}
+.tableAddress{
+    width: 200px;
+}
+.tableMobile{
+    width: 100px;
 }

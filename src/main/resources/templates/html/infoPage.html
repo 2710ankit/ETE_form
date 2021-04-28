@@ -2,8 +2,20 @@
 <html>
 <head >
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body onload="getfun()">
+<body onload="getfun()" style="background-color: darkslategray;">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li><a href="/">Add Information</a></li>
+            <li class="active" ><a href="/infopage">View Information</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 <div>
     <input id="search" placeholder="Enter the name here" style="margin-left: 20px;width: 250px;">
@@ -11,7 +23,7 @@
 </div>
 
 <table id="table">
-    <tr>
+    <tr style="background-color: #cac0a0">
         <th>
             <p>Name</p>
         </th>
