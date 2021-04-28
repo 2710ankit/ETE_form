@@ -7,9 +7,10 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/eteform"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="asdasdasd"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgres://zqhcqmuavseqna:e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8@ec2-54-166-167-192.compute-1.amazonaws.com:5432/d40q80o3cq6vre
+"/>
+            <property name="javax.persistence.jdbc.user" value="zqhcqmuavseqna"/>
+            <property name="javax.persistence.jdbc.password" value="e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8"/>
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
             <property name="hibernate.temp.use_jdbc_metadata.defaults" value="false"/>

@@ -25,9 +25,9 @@ public class JPA_Configuration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/eteform");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("asdasdasd");
+        dataSource.setUrl("jdbc:postgres://zqhcqmuavseqna:e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8@ec2-54-166-167-192.compute-1.amazonaws.com:5432/d40q80o3cq6vre");
+        dataSource.setUsername("zqhcqmuavseqna");
+        dataSource.setPassword("e59f39d49635b96f25cce159278973bfa8004021edca7a4359aca2e9d494e8d8");
         return  dataSource;
     }
 }
