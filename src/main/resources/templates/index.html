@@ -1,0 +1,99 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="../style/index.css">
+  </head>  
+<body onload="getfun()" >
+
+<div id="mainDiv">
+<div style="text-align: center;padding-top: 5px;"><h2>Details Form</h2></div>
+<hr>
+    <table id="mainTable">
+     <tr>
+       <td>
+        <span>Name: </span>
+       </td>
+       <td>
+        <input type="text" id="name" placeholder="Enter Name"  minlength="3" >
+       </td>
+    </tr>
+        <tr>
+            <td>
+                <span>Age: </span>
+            </td>
+            <td>
+                <input type="number" id="age" placeholder="Enter Age">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Email Id: </span>
+            </td>
+            <td>
+                <input type="email" id="email" placeholder="Enter Email Id">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Address: </span>
+            </td>
+            <td>
+                <input type="text" id="address" placeholder="Enter Address">
+            </td>
+        </tr>
+    <tr>
+        <td>
+         <span>Mob. No:  </span>
+        </td>
+        <td>
+         <input type="number" id="mobileNumber" placeholder="Enter Mobile Number" minlength="10" maxlength="10">
+        </td>
+    </tr>
+
+
+
+    <tr>
+      <td>
+
+      </td>
+      <td>
+       <button onclick="fun()"  id="submitBtn" >Submit</button>
+      </td>
+    </tr>
+</table>
+    <br>
+    <hr>
+    <div>
+    <input id="search" placeholder="Enter the name here" style="margin-left: 20px;width: 250px;">
+    <button id="searchBtn" onclick="searchFun()" style="float: right;margin-right: 20px;height: 25px;">Search</button>
+    </div>
+    <br>
+<div >
+    <table id="table">
+            <tr>
+                <th>
+                   <p>Name</p>
+                </th>
+                <th>
+                    <p>Age</p>
+                </th>
+                <th>
+                   <p> Email Id</p>
+                </th>
+                <th>
+                    <p>Address</p>
+                </th>
+                <th>
+                    <p>mobile</p>
+                </th>
+                <th>
+                   
+                </th>
+            </tr>
+        
+    </table>
+</div>
+</div>
+
+<script src="../js/index.js"></script>
+</body>
+</html>
